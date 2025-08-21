@@ -1,0 +1,125 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  margin: 0;
+  color: #fff;
+}
+
+.player {
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 18px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+  width: 90%;
+  max-width: 360px;
+  text-align: center;
+}
+
+.player h2 {
+  margin-bottom: 15px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #f1f1f1;
+}
+
+/* File input */
+input[type="file"] {
+  margin: 12px 0;
+  color: #ccc;
+}
+
+/* Controls */
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.controls button {
+  font-size: 22px;
+  margin: 0 10px;
+  padding: 14px 18px;
+  border: none;
+  border-radius: 50%;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.controls button:hover {
+  background: #007BFF;
+  transform: scale(1.1);
+}
+
+/* Progress bar */
+#progress {
+  width: 100%;
+  margin: 12px 0 5px 0;
+  cursor: pointer;
+  accent-color: #007BFF;
+}
+
+/* Timer */
+.time {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #ccc;
+}
+
+/* Volume */
+.volume-control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.volume-control label {
+  margin-right: 8px;
+}
+
+.volume-control input {
+  cursor: pointer;
+  accent-color: #007BFF;
+}
+
+/* Playlist */
+.playlist {
+  max-height: 180px;
+  overflow-y: auto;
+  border-top: 1px solid #333;
+  margin-top: 15px;
+  padding-top: 10px;
+}
+
+.playlist ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.playlist li {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #2b2b2b;
+  text-align: left;
+  transition: background 0.2s, color 0.2s;
+}
+
+.playlist li:hover {
+  background: #2e2e2e;
+}
+
+.playlist li.active {
+  background: #007BFF;
+  color: #fff;
+  border-radius: 6px;
+}
